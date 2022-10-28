@@ -1,4 +1,4 @@
-  /* Головні настанови */
+  /* ----------Головні настанови-------------------- */
 
 :root{
     --primary-text-color: #757575;
@@ -50,9 +50,9 @@ section{
 
     align-items: center;
 }
-/* HEADER*/
+/* ----------Header-------------------- */
 
-/* Logo */ 
+/* ---------Logo-------------------- */ 
 header{
     border-bottom: 1px solid #ECECEC;
 }
@@ -73,7 +73,7 @@ header{
     color:  var(--accent-color);
 }
 
-/* Nav */
+/* ----------Navigation-------------------- */
 .nav-list {
     display: flex;
     margin-left: 93px;
@@ -98,7 +98,7 @@ header{
 .nav-list .nav-link:hover, .nav-list .nav-link:focus {
     color: var(--accent-color);
 }
-/* Nav-communication */
+/* ----------Nav-communication-------------------- */
 .nav-communication{
     display: flex;
     margin-left: auto;
@@ -121,7 +121,7 @@ header{
     color: var(--accent-color);
 }
 
-/* Hero*/
+/* ----------Hero--------------------*/
 .hero{
     padding-top: 200px;
     padding-bottom: 200px;
@@ -167,10 +167,13 @@ header{
     padding: 10px 32px;
 }
 
-/* Features */
+/* ----------Features-------------------- */
 .features-items{
     display: flex;
     justify-content: center;
+}
+.features-item{
+    width: calc((100% - 90px)/4);
 }
 .features-item:not(:last-child){
     margin-right: 30px;
@@ -192,7 +195,7 @@ header{
     letter-spacing: 0.03em;
 }
 
-/* Benefits and Card */
+/* ----------Benefits and Card-------------------- */
 .title {
     margin-bottom: 50px;
     margin-top: 0;
@@ -210,31 +213,30 @@ header{
     display: flex;
 }
 .benefits-item{
-    width: 370px;
+    width: calc((100% - 60px)/3);
 }
 .benefits-item:not(:first-child){
     margin-left: 30px;
 }
-.card{
-    background-color: #F5F4FA;
+div.card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: var(--white-color);
 }
 .section-card-items{
     display: flex;
     text-align: center;
 }
+.section-card-item {
+    width: calc((100% - 90px)/4);
+
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
 .section-card-items .section-card-item + .section-card-item{
     margin-left: 30px;
 }
-.section-card-item{
-    
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-div.card{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.section-card  .section-card-item-title{
+.card  .section-card-title{
     margin-bottom: 10px;
     margin-top: 0;
     
@@ -243,13 +245,15 @@ div.card{
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-.section-card  .section-card-text{
+.card  .section-card-text{
+    margin: 0;
+
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
-/* Portfolio */
+/* ----------PORTFOLIO-------------------- */
 .filter-list{
     margin-bottom: 50px;
 
@@ -337,7 +341,7 @@ img{
     border-color: #EEEEEE;
 }
 
-/* Footer */
+/* ----------Footer-------------------- */
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
